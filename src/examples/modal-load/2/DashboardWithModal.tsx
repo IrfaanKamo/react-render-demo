@@ -4,6 +4,11 @@ import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplica
 import { Button, Modal } from "@mui/material";
 import { useState } from "react";
 
+// The re-render problem
+// ---------------------
+// Opening a modal whose state lives at the top of the app re-renders every component below it, 
+// so a trivial dialog takes almost a second to appear.
+
 const DashboardWithModal = () => {
   const [isOpen, setIsOpen] = useState(false);
   
