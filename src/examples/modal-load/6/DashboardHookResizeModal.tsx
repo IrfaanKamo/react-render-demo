@@ -13,7 +13,7 @@ const DashboardHookResizeModal = () => {
   const { isOpen, open, close } = useModalWithResize();
 
   return (
-    <>
+    <div>
       <Button onClick={open}>Open dialog</Button>
       <Modal open={isOpen} onClose={close}>
         <div>modal content</div>
@@ -21,7 +21,7 @@ const DashboardHookResizeModal = () => {
       <VerySlowComponent />
       <BunchOfStuff />
       <OtherStuffAlsoComplicated />
-    </>
+    </div>
   );
 };
 

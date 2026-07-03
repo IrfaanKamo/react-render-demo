@@ -11,7 +11,7 @@ const DashboardWithModalNoState = () => {
   let isOpen = false;
   
   return (
-    <>
+    <div>
       <Button onClick={() => isOpen = true}>Open dialog</Button>
       <Modal open={isOpen} onClose={() => isOpen = false}>
         <div>modal content</div>
@@ -20,7 +20,7 @@ const DashboardWithModalNoState = () => {
       <VerySlowComponent />
       <BunchOfStuff />
       <OtherStuffAlsoComplicated />
-    </>
+    </div>
   );
 };
 

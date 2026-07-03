@@ -13,7 +13,7 @@ const DashboardHookModal = () => {
   const { isOpen, open, close } = useModal();
 
   return (
-    <>
+    <div>
       <Button onClick={open}>Open dialog</Button>
       <Modal open={isOpen} onClose={close}>
         <div>modal content</div>
@@ -21,7 +21,7 @@ const DashboardHookModal = () => {
       <VerySlowComponent />
       <BunchOfStuff />
       <OtherStuffAlsoComplicated />
-    </>
+    </div>
   );
 };
 

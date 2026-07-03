@@ -10,12 +10,12 @@ import ExternalModalWithResize from "./ExternalModalWithResize";
 
 const DashboardExternalHookModal = () => {
   return (
-    <>
+    <div>
       <ExternalModalWithResize />
       <VerySlowComponent />
       <BunchOfStuff />
       <OtherStuffAlsoComplicated />
-    </>
+    </div>
   );
 };
 

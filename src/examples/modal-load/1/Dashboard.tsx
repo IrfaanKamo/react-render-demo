@@ -1,6 +1,7 @@
-import VerySlowComponent from "@/components/slow/VerySlowComponent";
-import BunchOfStuff from "@/components/stuff/BunchOfStuff";
-import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated";
+import VerySlowComponent from "@/components/slow/VerySlowComponent"
+import BunchOfStuff from "@/components/stuff/BunchOfStuff"
+import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated"
+import { Typography } from "@mui/material"
 
 // The Slow App
 // ------------
@@ -8,12 +9,12 @@ import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplica
 
 const Dashboard = () => {
   return (
-    <>
+    <div>
       <VerySlowComponent />
       <BunchOfStuff />
       <OtherStuffAlsoComplicated />
-    </>
-  );
+    </div>
+  )
 }
 
 export default Dashboard
