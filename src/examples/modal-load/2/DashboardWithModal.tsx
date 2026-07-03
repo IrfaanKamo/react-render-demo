@@ -1,4 +1,5 @@
 import VerySlowComponent from "@/components/slow/VerySlowComponent";
+import BrowserModal from "@/components/stuff/BrowserModal";
 import BunchOfStuff from "@/components/stuff/BunchOfStuff";
 import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated";
 import { Button, Modal } from "@mui/material";
@@ -15,9 +16,9 @@ const DashboardWithModal = () => {
   return (
     <div>
       <Button onClick={() => setIsOpen(true)}>Open dialog</Button>
-      <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+      <BrowserModal open={isOpen} onClose={() => setIsOpen(false)}>
         <div>modal content</div>
-      </Modal>
+      </BrowserModal>
       
       <VerySlowComponent />
       <BunchOfStuff />
