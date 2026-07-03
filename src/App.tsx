@@ -23,7 +23,7 @@ export function App() {
   const example = chapter_one_examples[currentPage]!
 
   return (
-    <div className="p-8 text-center h-dvh w-[80%] relative mx-auto">
+    <div className="p-8 text-center h-dvh w-[80vw] relative mx-auto">
       <div className="flex flex-col justify-between items-center h-full w-full">
         {example.heading}
         <BrowserWindow>{example.app}</BrowserWindow>
