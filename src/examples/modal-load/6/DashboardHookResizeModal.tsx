@@ -1,29 +1,32 @@
-import { Button } from "@mui/material";
-import useModalWithResize from "./useModalWithResize";
-import VerySlowComponent from "@/components/slow/VerySlowComponent";
-import BunchOfStuff from "@/components/stuff/BunchOfStuff";
-import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated";
-import BrowserModal from "@/components/stuff/BrowserModal";
+import { Button } from "@mui/material"
+import useModalWithResize from "./useModalWithResize"
+import VerySlowComponent from "@/components/slow/VerySlowComponent"
+import BunchOfStuff from "@/components/stuff/BunchOfStuff"
+import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated"
+import BrowserModal from "@/components/stuff/BrowserModal"
 
 // Hidden State In A Hook
 // ----------------------
-// A custom hook that tracks window resize re-renders the entire app on every resize, 
+// A custom hook that tracks window resize re-renders the entire app on every resize,
 // even though the width value is never returned from the hook.
 
 const DashboardHookResizeModal = () => {
-  const { isOpen, open, close } = useModalWithResize();
+  const { isOpen, open, close } = useModalWithResize()
 
   return (
     <div>
       <Button onClick={open}>Open dialog</Button>
       <BrowserModal open={isOpen} onClose={close}>
-        <div>modal content</div>
+        <div>
+          Ohh, there seems to be extra rendering happening when the window
+          resizes
+        </div>
       </BrowserModal>
       <VerySlowComponent />
       <BunchOfStuff />
       <OtherStuffAlsoComplicated />
     </div>
-  );
-};
+  )
+}
 
-export default DashboardHookResizeModal;
+export default DashboardHookResizeModal

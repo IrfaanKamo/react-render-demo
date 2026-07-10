@@ -15,7 +15,7 @@ const DashboardWithModalNoState = () => {
     <div>
       <Button onClick={() => isOpen = true}>Open dialog</Button>
       <BrowserModal open={isOpen} onClose={() => isOpen = false}>
-        <div>modal content</div>
+        <div>I won't even open</div>
       </BrowserModal>
       
       <VerySlowComponent />

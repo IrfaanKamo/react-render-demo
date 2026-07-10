@@ -8,7 +8,7 @@ const ExternalModal = () => {
     <div>
       <Button onClick={() => setIsOpen(true)}>Open dialog</Button>
       <BrowserModal open={isOpen} onClose={() => setIsOpen(false)}>
-        <div>modal content</div>
+        <div>Speeeeed!! Look at how fast I am!</div>
       </BrowserModal>
     </div>
   );

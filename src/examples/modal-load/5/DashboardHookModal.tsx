@@ -1,29 +1,32 @@
-import { Button } from "@mui/material";
-import useModal from "./useModal";
-import VerySlowComponent from "@/components/slow/VerySlowComponent";
-import BunchOfStuff from "@/components/stuff/BunchOfStuff";
-import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated";
-import BrowserModal from "@/components/stuff/BrowserModal";
+import { Button } from "@mui/material"
+import useModal from "./useModal"
+import VerySlowComponent from "@/components/slow/VerySlowComponent"
+import BunchOfStuff from "@/components/stuff/BunchOfStuff"
+import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated"
+import BrowserModal from "@/components/stuff/BrowserModal"
 
 // State In A Custom Hook
 // ----------------------
-// Hiding the modal state inside a useModal hook still re-renders the whole component 
+// Hiding the modal state inside a useModal hook still re-renders the whole component
 // on every change: a hook abstracts state away but doesn't isolate it.
 
 const DashboardHookModal = () => {
-  const { isOpen, open, close } = useModal();
+  const { isOpen, open, close } = useModal()
 
   return (
     <div>
       <Button onClick={open}>Open dialog</Button>
       <BrowserModal open={isOpen} onClose={close}>
-        <div>modal content</div>
+        <div>
+          I was rendered with a useModal hook, but I'm still causing everything
+          to render when I open
+        </div>
       </BrowserModal>
       <VerySlowComponent />
       <BunchOfStuff />
       <OtherStuffAlsoComplicated />
     </div>
-  );
-};
+  )
+}
 
-export default DashboardHookModal;
+export default DashboardHookModal
