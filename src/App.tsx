@@ -8,19 +8,19 @@ import {
 import BrowserWindow from "./components/layout/BrowserWindow"
 
 export function App() {
-  const [currentPage, setCurrentPage] = useState(0)
+  const [currentPage, setCurrentPage] = useState(1)
 
   const handleNavigate = (direction: "next" | "prev") => {
     setCurrentPage((prev) => {
       if (direction === "next") {
         return prev < _numberOfChapterOneExamples ? prev + 1 : prev
       } else {
-        return prev > 0 ? prev - 1 : prev
+        return prev > 1 ? prev - 1 : prev
       }
     })
   }
 
-  const example = chapter_one_examples[currentPage]!
+  const example = chapter_one_examples[currentPage - 1]!
 
   return (
     <div className="p-8 text-center h-dvh w-[80vw] relative mx-auto">
@@ -31,7 +31,7 @@ export function App() {
           <Button
             variant="outlined"
             onClick={() => handleNavigate("prev")}
-            disabled={currentPage === 0}
+            disabled={currentPage === 1}
           >
             Previous
           </Button>

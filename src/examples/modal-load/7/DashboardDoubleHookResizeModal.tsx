@@ -1,8 +1,9 @@
-import { Button, Modal } from "@mui/material";
+import { Button } from "@mui/material";
 import useModalWithUseResize from "./useModalWithUseResize";
 import VerySlowComponent from "@/components/slow/VerySlowComponent";
 import BunchOfStuff from "@/components/stuff/BunchOfStuff";
 import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated";
+import BrowserModal from "@/components/stuff/BrowserModal";
 
 // Hooks Calling Hooks
 // -------------------
@@ -15,9 +16,9 @@ const DashboardDoubleHookResizeModal = () => {
   return (
     <div>
       <Button onClick={open}>Open dialog</Button>
-      <Modal open={isOpen} onClose={close}>
+      <BrowserModal open={isOpen} onClose={close}>
         <div>modal content</div>
-      </Modal>
+      </BrowserModal>
       <VerySlowComponent />
       <BunchOfStuff />
       <OtherStuffAlsoComplicated />

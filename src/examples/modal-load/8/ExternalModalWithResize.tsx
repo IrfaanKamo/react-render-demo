@@ -1,5 +1,6 @@
-import { Button, Modal } from "@mui/material";
+import { Button } from "@mui/material";
 import useModalWithUseResize from "../7/useModalWithUseResize";
+import BrowserModal from "@/components/stuff/BrowserModal";
 
 const ExternalModalWithResize = () => {
   const { isOpen, open, close } = useModalWithUseResize();
@@ -7,9 +8,9 @@ const ExternalModalWithResize = () => {
   return (
     <div>
       <Button onClick={open}>Open dialog</Button>
-      <Modal open={isOpen} onClose={close}>
+      <BrowserModal open={isOpen} onClose={close}>
         <div>modal content</div>
-      </Modal>
+      </BrowserModal>
     </div>
   );
 };

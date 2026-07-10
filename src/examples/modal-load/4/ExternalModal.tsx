@@ -1,14 +1,15 @@
 import { useState } from "react";
-import { Button, Modal } from "@mui/material";
+import { Button } from "@mui/material";
+import BrowserModal from "@/components/stuff/BrowserModal";
 
 const ExternalModal = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
       <Button onClick={() => setIsOpen(true)}>Open dialog</Button>
-      <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+      <BrowserModal open={isOpen} onClose={() => setIsOpen(false)}>
         <div>modal content</div>
-      </Modal>
+      </BrowserModal>
     </div>
   );
 };
