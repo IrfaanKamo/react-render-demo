@@ -10,6 +10,7 @@ import BrowserModal from "@/components/stuff/BrowserModal"
 // A custom hook that tracks window resize re-renders the entire app on every resize,
 // even though the width value is never returned from the hook.
 
+//#region demo
 const DashboardHookResizeModal = () => {
   const { isOpen, open, close } = useModalWithResize()
 
@@ -18,8 +19,8 @@ const DashboardHookResizeModal = () => {
       <Button onClick={open}>Open dialog</Button>
       <BrowserModal open={isOpen} onClose={close}>
         <div>
-          Ohh, there seems to be extra rendering happening when the window
-          resizes
+          Ohh, there seems to be extra rendering 
+          happening when the window resizes
         </div>
       </BrowserModal>
       <VerySlowComponent />
@@ -28,5 +29,6 @@ const DashboardHookResizeModal = () => {
     </div>
   )
 }
+//#endregion demo
 
 export default DashboardHookResizeModal

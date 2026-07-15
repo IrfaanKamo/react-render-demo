@@ -8,6 +8,7 @@ import { Button } from "@mui/material";
 // Mutating a plain local variable instead of calling a state setter never re-renders, 
 // so the dialog never opens. Props changing don't cause re-renders; state updates do.
 
+// #region demo
 const DashboardWithModalNoState = () => {
   let isOpen = false;
   
@@ -24,5 +25,7 @@ const DashboardWithModalNoState = () => {
     </div>
   );
 };
+// #endregion demo
+
 
 export default DashboardWithModalNoState;

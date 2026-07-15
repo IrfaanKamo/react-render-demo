@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+//#region demo
 const useModal = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,5 +10,6 @@ const useModal = () => {
     close: () => setIsOpen(false),
   };
 };
+//#endregion demo
 
 export default useModal;

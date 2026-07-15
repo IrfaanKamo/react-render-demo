@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@mui/material";
 import BrowserModal from "@/components/stuff/BrowserModal";
 
+// #region demo
 const ExternalModal = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -13,5 +14,6 @@ const ExternalModal = () => {
     </div>
   );
 };
+// #endregion demo
 
 export default ExternalModal

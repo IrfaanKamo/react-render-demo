@@ -10,6 +10,7 @@ import { useState } from "react";
 // Opening a modal whose state lives at the top of the app re-renders every component below it, 
 // so a trivial dialog takes almost a second to appear.
 
+// #region demo
 const DashboardWithModal = () => {
   const [isOpen, setIsOpen] = useState(false);
   
@@ -26,5 +27,7 @@ const DashboardWithModal = () => {
     </div>
   );
 };
+// #endregion demo
+
 
 export default DashboardWithModal;

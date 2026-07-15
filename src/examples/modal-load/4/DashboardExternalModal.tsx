@@ -8,6 +8,7 @@ import ExternalModal from "./ExternalModal";
 // Extracting the button, the dialog, and their state into a small child component 
 // keeps the re-render contained, and the dialog now opens instantly.
 
+// #region demo
 const DashboardExternalModal = () => {
   
   return (
@@ -19,5 +20,6 @@ const DashboardExternalModal = () => {
     </div>
   );
 };
+// #endregion demo
 
 export default DashboardExternalModal;

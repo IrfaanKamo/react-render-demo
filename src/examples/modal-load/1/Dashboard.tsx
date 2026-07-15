@@ -7,6 +7,7 @@ import { Typography } from "@mui/material"
 // ------------
 // We have inherited a slow app that needs new features to be added
 
+// #region demo
 const Dashboard = () => {
   return (
     <div>
@@ -16,5 +17,6 @@ const Dashboard = () => {
     </div>
   )
 }
+// #endregion demo
 
 export default Dashboard

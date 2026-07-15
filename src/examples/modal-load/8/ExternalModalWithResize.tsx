@@ -2,6 +2,7 @@ import { Button } from "@mui/material"
 import useModalWithUseResize from "../7/useModalWithUseResize"
 import BrowserModal from "@/components/stuff/BrowserModal"
 
+//#region demo
 const ExternalModalWithResize = () => {
   const { isOpen, open, close } = useModalWithUseResize()
 
@@ -14,5 +15,6 @@ const ExternalModalWithResize = () => {
     </div>
   )
 }
+//#endregion demo
 
 export default ExternalModalWithResize

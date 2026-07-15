@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+//#region demo
 const useResizeDetector = () => {
   const [width, setWidth] = useState(0);
 
@@ -15,5 +16,6 @@ const useResizeDetector = () => {
 
   return null;
 };
+//#endregion demo
 
 export default useResizeDetector

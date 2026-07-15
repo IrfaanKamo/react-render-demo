@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+//#region demo
 const useModalWithResize = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [width, setWidth] = useState(0);
@@ -20,5 +21,6 @@ const useModalWithResize = () => {
     close: () => setIsOpen(false),
   };
 };
+//#endregion demo
 
 export default useModalWithResize;

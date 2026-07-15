@@ -10,6 +10,7 @@ import BrowserModal from "@/components/stuff/BrowserModal"
 // Hiding the modal state inside a useModal hook still re-renders the whole component
 // on every change: a hook abstracts state away but doesn't isolate it.
 
+//#region demo
 const DashboardHookModal = () => {
   const { isOpen, open, close } = useModal()
 
@@ -18,8 +19,7 @@ const DashboardHookModal = () => {
       <Button onClick={open}>Open dialog</Button>
       <BrowserModal open={isOpen} onClose={close}>
         <div>
-          I was rendered with a useModal hook, but I'm still causing everything
-          to render when I open
+          I was rendered with a useModal hook
         </div>
       </BrowserModal>
       <VerySlowComponent />
@@ -28,5 +28,6 @@ const DashboardHookModal = () => {
     </div>
   )
 }
+//#endregion demo
 
 export default DashboardHookModal

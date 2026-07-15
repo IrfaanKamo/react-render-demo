@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useResizeDetector from "./useResizeDetector";
 
+//#region demo
 const useModalWithUseResize = () => {
   const [isOpen, setIsOpen] = useState(false);
   useResizeDetector();
@@ -11,5 +12,6 @@ const useModalWithUseResize = () => {
     close: () => setIsOpen(false),
   };
 };
+//#endregion demo
 
 export default useModalWithUseResize;

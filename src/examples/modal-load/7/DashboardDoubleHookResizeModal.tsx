@@ -10,6 +10,7 @@ import BrowserModal from "@/components/stuff/BrowserModal"
 // Even a hook that returns null re-renders its host: any state update anywhere in a
 // chain of hooks re-renders the component that uses the first one.
 
+//#region demo
 const DashboardDoubleHookResizeModal = () => {
   const { isOpen, open, close } = useModalWithUseResize()
 
@@ -28,5 +29,6 @@ const DashboardDoubleHookResizeModal = () => {
     </div>
   )
 }
+//#endregion demo
 
 export default DashboardDoubleHookResizeModal
