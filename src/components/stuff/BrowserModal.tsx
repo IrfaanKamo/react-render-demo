@@ -1,13 +1,12 @@
 import { Modal, type BackdropProps, type ModalProps } from "@mui/material"
 
 const BrowserModal = ({
-  children,
   open,
   onClose,
   sx = {},
   slotProps = {},
   ...rest
-}: ModalProps) => {
+}: Omit<ModalProps, 'children'>) => {
   const backdropOverrides: Partial<BackdropProps> = {
     ...(slotProps?.backdrop as Partial<BackdropProps>),
     sx: {
@@ -52,7 +51,7 @@ const BrowserModal = ({
           border: "1px solid #e2e8f0",
         }}
       >
-        {children}
+        <div>I am a modal</div>
       </div>
     </Modal>
   )

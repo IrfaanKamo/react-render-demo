@@ -24,7 +24,7 @@ export function App() {
 
   return (
     <div className="p-8 text-center h-dvh w-[80vw] relative mx-auto">
-      <div className="flex flex-col justify-between items-center h-full w-full">
+      <div className="flex flex-col justify-between items-center gap-5 h-full w-full">
         {example.heading}
         <BrowserWindow>{example.app}</BrowserWindow>
         <div className="flex gap-2.5 justify-center">

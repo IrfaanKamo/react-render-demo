@@ -16,10 +16,8 @@ const DashboardWithModal = () => {
   
   return (
     <div>
-      <Button onClick={() => setIsOpen(true)}>Open dialog</Button>
-      <BrowserModal open={isOpen} onClose={() => setIsOpen(false)}>
-        <div>Geez! That took long to open, goodluck trying to close me</div>
-      </BrowserModal>
+      <Button variant="outlined" onClick={() => setIsOpen(true)}>Open dialog</Button>
+      <BrowserModal open={isOpen} onClose={() => setIsOpen(false)} />
       
       <VerySlowComponent />
       <BunchOfStuff />

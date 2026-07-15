@@ -39,7 +39,7 @@ const BrowserWindow = ({
     </div>
 
     {/* Content Area */}
-    <div className="flex-1 bg-white overflow-auto text-slate-900 relative">
+    <div className="flex-1 bg-white overflow-auto text-slate-900 relative p-3">
       {children}
     </div>
   </div>

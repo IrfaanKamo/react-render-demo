@@ -16,12 +16,8 @@ const DashboardHookModal = () => {
 
   return (
     <div>
-      <Button onClick={open}>Open dialog</Button>
-      <BrowserModal open={isOpen} onClose={close}>
-        <div>
-          I was rendered with a useModal hook
-        </div>
-      </BrowserModal>
+      <Button variant="outlined" onClick={open}>Open dialog</Button>
+      <BrowserModal open={isOpen} onClose={close} />
       <VerySlowComponent />
       <BunchOfStuff />
       <OtherStuffAlsoComplicated />

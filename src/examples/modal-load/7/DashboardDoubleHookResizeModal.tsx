@@ -16,13 +16,8 @@ const DashboardDoubleHookResizeModal = () => {
 
   return (
     <div>
-      <Button onClick={open}>Open dialog</Button>
-      <BrowserModal open={isOpen} onClose={close}>
-        <div>
-          Ohh, there seems to be another hook that's causing even more
-          re-renders
-        </div>
-      </BrowserModal>
+      <Button variant="outlined" onClick={open}>Open dialog</Button>
+      <BrowserModal open={isOpen} onClose={close} />
       <VerySlowComponent />
       <BunchOfStuff />
       <OtherStuffAlsoComplicated />

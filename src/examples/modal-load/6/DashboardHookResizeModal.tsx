@@ -16,13 +16,8 @@ const DashboardHookResizeModal = () => {
 
   return (
     <div>
-      <Button onClick={open}>Open dialog</Button>
-      <BrowserModal open={isOpen} onClose={close}>
-        <div>
-          Ohh, there seems to be extra rendering 
-          happening when the window resizes
-        </div>
-      </BrowserModal>
+      <Button variant="outlined" onClick={open}>Open dialog</Button>
+      <BrowserModal open={isOpen} onClose={close} />
       <VerySlowComponent />
       <BunchOfStuff />
       <OtherStuffAlsoComplicated />

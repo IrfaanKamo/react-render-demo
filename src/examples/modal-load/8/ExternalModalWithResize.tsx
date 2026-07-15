@@ -8,10 +8,8 @@ const ExternalModalWithResize = () => {
 
   return (
     <div>
-      <Button onClick={open}>Open dialog</Button>
-      <BrowserModal open={isOpen} onClose={close}>
-        <div>I can open much faster even with these multi hook calls</div>
-      </BrowserModal>
+      <Button variant="outlined" onClick={open}>Open dialog</Button>
+      <BrowserModal open={isOpen} onClose={close} />
     </div>
   )
 }
