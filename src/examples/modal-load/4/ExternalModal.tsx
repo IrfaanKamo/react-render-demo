@@ -7,7 +7,7 @@ const ExternalModal = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <Button variant="outlined" onClick={() => setIsOpen(true)}>Open dialog</Button>
+      <Button onClick={() => setIsOpen(true)}>Open dialog</Button>
       <BrowserModal open={isOpen} onClose={() => setIsOpen(false)} />
     </div>
   );

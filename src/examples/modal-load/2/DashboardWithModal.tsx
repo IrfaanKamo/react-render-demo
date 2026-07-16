@@ -16,7 +16,7 @@ const DashboardWithModal = () => {
   
   return (
     <div>
-      <Button variant="outlined" onClick={() => setIsOpen(true)}>Open dialog</Button>
+      <Button onClick={() => setIsOpen(true)}>Open dialog</Button>
       <BrowserModal open={isOpen} onClose={() => setIsOpen(false)} />
       
       <VerySlowComponent />

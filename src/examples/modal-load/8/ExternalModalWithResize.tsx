@@ -8,7 +8,7 @@ const ExternalModalWithResize = () => {
 
   return (
     <div>
-      <Button variant="outlined" onClick={open}>Open dialog</Button>
+      <Button onClick={open}>Open dialog</Button>
       <BrowserModal open={isOpen} onClose={close} />
     </div>
   )
