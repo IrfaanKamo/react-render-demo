@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "@mui/material";
+import Button from "@/components/design/Button";
 import BrowserModal from "@/components/stuff/BrowserModal";
 
 // #region demo

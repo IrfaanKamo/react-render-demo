@@ -2,7 +2,7 @@ import VerySlowComponent from "@/components/slow/VerySlowComponent";
 import BrowserModal from "@/components/stuff/BrowserModal";
 import BunchOfStuff from "@/components/stuff/BunchOfStuff";
 import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated";
-import { Button } from "@mui/material";
+import Button from "@/components/design/Button";
 
 // The Big Re-renders Myth
 // Mutating a plain local variable instead of calling a state setter never re-renders, 

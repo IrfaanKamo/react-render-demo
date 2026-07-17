@@ -1,4 +1,4 @@
-import { Button } from "@mui/material"
+import Button from "@/components/design/Button";
 import useModalWithUseResize from "./useModalWithUseResize"
 import VerySlowComponent from "@/components/slow/VerySlowComponent"
 import BunchOfStuff from "@/components/stuff/BunchOfStuff"
