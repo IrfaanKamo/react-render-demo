@@ -1,12 +1,12 @@
-import { wait } from "@/shared/timer";
+import { wait } from "@/shared/timer"
 
 const VerySlowComponent = () => {
-  wait(500);
+  wait(500)
   return (
-    <div>
-      My Very Slow Component
-    </div>
-  );
-};
+    <pre className=" text-green-700 my-3">
+      <code>{'<VerySlowComponent />'}</code>
+    </pre>
+  )
+}
 
 export default VerySlowComponent
