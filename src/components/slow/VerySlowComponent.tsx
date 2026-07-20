@@ -2,7 +2,7 @@ import { wait } from "@/shared/timer"
 import { RenderVisualizer } from "../design/RenderVisualiser"
 
 const VerySlowComponent = () => {
-  wait(1500)
+  wait(500)
   console.log("rendered: <VerySlowComponent />")
   return (
     <RenderVisualizer>
