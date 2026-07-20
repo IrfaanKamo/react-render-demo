@@ -13,7 +13,7 @@ import { useState } from "react";
 // #region demo
 const DashboardWithModal = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+  console.log('Begin Dashboard render...')
   return (
     <div>
       <Button onClick={() => setIsOpen(true)}>Open dialog</Button>

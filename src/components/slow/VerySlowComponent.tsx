@@ -1,11 +1,15 @@
 import { wait } from "@/shared/timer"
+import { RenderVisualizer } from "../design/RenderVisualiser"
 
 const VerySlowComponent = () => {
-  wait(500)
+  wait(1500)
+  console.log("rendered: <VerySlowComponent />")
   return (
-    <pre className=" text-green-700 my-3">
-      <code>{'<VerySlowComponent />'}</code>
-    </pre>
+    <RenderVisualizer>
+      <pre className=" text-red-500 my-2">
+        <code>{"<VerySlowComponent />"}</code>
+      </pre>
+    </RenderVisualizer>
   )
 }
 

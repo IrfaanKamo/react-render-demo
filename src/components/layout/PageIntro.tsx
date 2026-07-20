@@ -8,7 +8,7 @@ interface Props {
 const PageIntro = ({ title, subtitle }: Props) => (
   <div>
     <Typography variant="h3">{title}</Typography>
-    <Typography variant="h6">{subtitle}</Typography>
+    {/* <Typography variant="h6">{subtitle}</Typography> */}
   </div>
 )
 
