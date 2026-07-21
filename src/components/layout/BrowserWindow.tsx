@@ -11,7 +11,7 @@ const BrowserWindow = ({
   title = "Example App",
   url = "https://example.com",
 }: Props) => (
-  <div className="flex flex-col h-2/3 w-3/4 bg-gray-900 rounded-lg overflow-hidden shadow-xl border border-gray-700">
+  <div className="flex flex-col h-2/3 w-96 bg-gray-900 rounded-lg overflow-hidden shadow-xl border border-gray-700">
     {/* Browser Chrome */}
     <div className="bg-gray-800 border-b border-gray-700">
       {/* Title Bar */}
