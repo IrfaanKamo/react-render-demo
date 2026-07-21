@@ -1,6 +1,7 @@
 import VerySlowComponent from "@/components/slow/VerySlowComponent"
 import BunchOfStuff from "@/components/stuff/BunchOfStuff"
 import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated"
+import { showContainer } from "@/shared/styles"
 import { Switch } from "@mui/material"
 import { useState } from "react"
 
@@ -13,9 +14,7 @@ const DashboardWithCard = () => {
   const [isDark, setIsDark] = useState(false)
 
   return (
-    <div
-      className={`mx-7 border rounded-md ${isDark ? "bg-gray-300" : "bg-white"} w-80 h-44`}
-    >
+    <div className={showContainer(isDark)}>
       <Switch checked={isDark} onChange={() => setIsDark(!isDark)} /> Dark Mode
       <VerySlowComponent />
       <BunchOfStuff />

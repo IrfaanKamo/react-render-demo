@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Switch } from "@mui/material"
+import { showContainer } from "@/shared/styles"
 
 // The Dark Mode
 // ------------
@@ -10,9 +11,7 @@ const DarkModeCard = ({ children }: React.PropsWithChildren) => {
   const [isDark, setIsDark] = useState(false)
 
   return (
-    <div
-      className={`mx-7 border rounded-md ${isDark ? "bg-gray-300" : "bg-white"} w-80 h-44`}
-    >
+    <div className={showContainer(isDark)}>
       <Switch checked={isDark} onChange={() => setIsDark(!isDark)} /> Dark Mode
       {children}
     </div>
