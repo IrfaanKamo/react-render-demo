@@ -1,12 +1,15 @@
+import PageIntro from "../../components/layout/PageIntro"
 import Dashboard from "./1/Dashboard"
 import DashboardWithModal from "./2/DashboardWithModal"
 import DashboardWithModalNoState from "./3/DashboardWithModalNoState"
 import DashboardExternalModal from "./4/DashboardExternalModal"
 import DashboardHookModal from "./5/DashboardHookModal"
-import DashboardHookResizeModal from "./6/DashboardHookResizeModal"
-import DashboardDoubleHookResizeModal from "./7/DashboardDoubleHookResizeModal"
-import DashboardExternalHookModal from "./8/DashboardExternalHookModal"
-import PageIntro from "../../components/layout/PageIntro"
+// import DashboardHookResizeModal from "./6/DashboardHookResizeModal"
+// import DashboardDoubleHookResizeModal from "./7/DashboardDoubleHookResizeModal"
+// import DashboardExternalHookModal from "./8/DashboardExternalHookModal"
+import DashboardExternalHookModal from "./9/DashboardExternalHookModal"
+import DashboardWithCard from "../dark-mode-card/1/DashboardWithCard"
+import DashboardDarkMode from "../dark-mode-card/2/DashboardDarkMode"
 
 export const chapter_one_examples = [
   {
@@ -61,36 +64,63 @@ export const chapter_one_examples = [
   {
     heading: (
       <PageIntro
-        title={"6. Hidden State In A Hook"}
-        subtitle={
-          "A custom hook that tracks window resize re-renders the entire app on every resize, even though the width value is never returned from the hook."
-        }
-      />
-    ),
-    app: <DashboardHookResizeModal />,
-  },
-  {
-    heading: (
-      <PageIntro
-        title={"7. Hooks Calling Hooks"}
-        subtitle={
-          "Even a hook that returns null re-renders its host: any state update anywhere in a chain of hooks re-renders the component that uses the first one."
-        }
-      />
-    ),
-    app: <DashboardDoubleHookResizeModal />,
-  },
-  {
-    heading: (
-      <PageIntro
-        title={"8. Isolating The Hook"}
-        subtitle={
-          "The fix: move the button, dialog, and the custom hook into one small component so resize-driven re-renders stay contained instead of reaching the whole app."
-        }
+        title={"6. Isolating the Hook"}
+        subtitle=""
       />
     ),
     app: <DashboardExternalHookModal />,
   },
+  {
+    heading: (
+      <PageIntro
+        title={"7. Dark Mode Card"}
+        subtitle=""
+      />
+    ),
+    app: <DashboardWithCard />,
+  },
+  {
+    heading: (
+      <PageIntro
+        title={"8. Introducing Children"}
+        subtitle=""
+      />
+    ),
+    app: <DashboardDarkMode />,
+  },
+  // {
+  //   heading: (
+  //     <PageIntro
+  //       title={"6. Hidden State In A Hook"}
+  //       subtitle={
+  //         "A custom hook that tracks window resize re-renders the entire app on every resize, even though the width value is never returned from the hook."
+  //       }
+  //     />
+  //   ),
+  //   app: <DashboardHookResizeModal />,
+  // },
+  // {
+  //   heading: (
+  //     <PageIntro
+  //       title={"7. Hooks Calling Hooks"}
+  //       subtitle={
+  //         "Even a hook that returns null re-renders its host: any state update anywhere in a chain of hooks re-renders the component that uses the first one."
+  //       }
+  //     />
+  //   ),
+  //   app: <DashboardDoubleHookResizeModal />,
+  // },
+  // {
+  //   heading: (
+  //     <PageIntro
+  //       title={"8. Isolating The Hook"}
+  //       subtitle={
+  //         "The fix: move the button, dialog, and the custom hook into one small component so resize-driven re-renders stay contained instead of reaching the whole app."
+  //       }
+  //     />
+  //   ),
+  //   app: <DashboardExternalHookModal />,
+  // },
 ] as const
 
 export const _numberOfChapterOneExamples = chapter_one_examples.length
