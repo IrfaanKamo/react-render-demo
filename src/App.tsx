@@ -1,50 +1,27 @@
-import { Button } from "@mui/material"
 import "./index.css"
 import { useState } from "react"
-import {
-  _numberOfChapterOneExamples,
-  chapter_one_examples,
-} from "./examples/modal-load/examples"
-import BrowserWindow from "./components/layout/BrowserWindow"
+import RenderDemo from "./examples"
 
 export function App() {
-  const [currentPage, setCurrentPage] = useState(1)
-
-  const handleNavigate = (direction: "next" | "prev") => {
-    setCurrentPage((prev) => {
-      if (direction === "next") {
-        return prev < _numberOfChapterOneExamples ? prev + 1 : prev
-      } else {
-        return prev > 1 ? prev - 1 : prev
-      }
-    })
+  const [startApp, setStartApp] = useState(false)
+  if (startApp) {
+    return <RenderDemo />
   }
 
-  const example = chapter_one_examples[currentPage - 1]!
-
   return (
-    <div className="p-8 text-center h-dvh relative mx-auto">
-      <div className="flex flex-col justify-between items-center gap-5 h-full w-full">
-        {example.heading}
-        <BrowserWindow>{example.app}</BrowserWindow>
-        <div className="flex gap-2.5 justify-center">
-          <Button
-            variant="outlined"
-            onClick={() => handleNavigate("prev")}
-            disabled={currentPage === 1}
-          >
-            Previous
-          </Button>
-          <Button
-            variant="outlined"
-            onClick={() => handleNavigate("next")}
-            disabled={currentPage === _numberOfChapterOneExamples}
-          >
-            Next
-          </Button>
-        </div>
-      </div>
-    </div>
+    <button
+      type="button"
+      onClick={() => setStartApp(true)}
+      className="group relative inline-flex h-14 items-center gap-3 overflow-hidden rounded-full bg-white px-8 text-base font-bold text-zinc-950 shadow-blue-200 transition-all duration-300 hover:-translate-y-1 hover:bg-blue-200 hover:shadow-[0_16px_38px_rgba(163,230,53,0.32)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300 active:translate-y-0"
+    >
+      <span className="absolute inset-0 -translate-x-full bg-white/30 transition-transform duration-700 ease-out group-hover:translate-x-full" />
+      <span className="relative">Let's start</span>
+      <span className="relative flex h-7 w-7 items-center justify-center rounded-full bg-zinc-950 text-white transition-transform duration-300 group-hover:translate-x-1">
+        <span aria-hidden="true" className="text-lg leading-none">
+          &rarr;
+        </span>
+      </span>
+    </button>
   )
 }
 
