@@ -2,7 +2,7 @@ import Button from "@/components/design/Button";
 import useModalWithResize from "./useModalWithResize"
 import VerySlowComponent from "@/components/slow/VerySlowComponent"
 import BunchOfStuff from "@/components/stuff/BunchOfStuff"
-import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated"
+import OtherComplicatedStuff from "@/components/stuff/OtherComplicatedStuff"
 import BrowserModal from "@/components/stuff/BrowserModal"
 
 // Hidden State In A Hook
@@ -20,7 +20,7 @@ const DashboardHookResizeModal = () => {
       <BrowserModal open={isOpen} onClose={close} />
       <VerySlowComponent />
       <BunchOfStuff />
-      <OtherStuffAlsoComplicated />
+      <OtherComplicatedStuff />
     </div>
   )
 }

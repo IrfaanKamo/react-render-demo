@@ -3,7 +3,7 @@ import Dashboard from "./1/Dashboard"
 import DashboardWithModal from "./2/DashboardWithModal"
 import DashboardWithModalNoState from "./3/DashboardWithModalNoState"
 import DashboardExternalModal from "./4/DashboardExternalModal"
-import DashboardHookModal from "./5/DashboardHookModal"
+// import DashboardHookModal from "./5/DashboardHookModal"
 // import DashboardHookResizeModal from "./6/DashboardHookResizeModal"
 // import DashboardDoubleHookResizeModal from "./7/DashboardDoubleHookResizeModal"
 // import DashboardExternalHookModal from "./8/DashboardExternalHookModal"
@@ -35,45 +35,45 @@ export const chapter_one_examples = [
   {
     heading: (
       <PageIntro
-        title={"3. The Big Re-renders Myth"}
-        subtitle={`Mutating a plain local variable instead of calling a state setter never re-renders, so the dialog never opens. Props changing don't cause re-renders; state updates do.`}
-      />
-    ),
-    app: <DashboardWithModalNoState />,
-  },
-  {
-    heading: (
-      <PageIntro
-        title={"4. Moving State Down"}
+      title={"3. Moving State Down"}
         subtitle={
           "Extracting the button, the dialog, and their state into a small child component keeps the re-render contained, and the dialog now opens instantly."
         }
-      />
+        />
     ),
     app: <DashboardExternalModal />,
   },
   {
     heading: (
       <PageIntro
-        title={"5. State In A Custom Hook"}
-        subtitle={`Hiding the modal state inside a useModal hook still re-renders the whole component on every change: a hook abstracts state away but doesn't isolate it.`}
+        title={"4. The Big Re-renders Myth"}
+        subtitle={`Mutating a plain local variable instead of calling a state setter never re-renders, so the dialog never opens. Props changing don't cause re-renders; state updates do.`}
       />
     ),
-    app: <DashboardHookModal />,
+    app: <DashboardWithModalNoState />,
   },
+  // {
+  //   heading: (
+  //     <PageIntro
+  //       title={"5. State In A Custom Hook"}
+  //       subtitle={`Hiding the modal state inside a useModal hook still re-renders the whole component on every change: a hook abstracts state away but doesn't isolate it.`}
+  //     />
+  //   ),
+  //   app: <DashboardHookModal />,
+  // },
+  // {
+  //   heading: (
+  //     <PageIntro
+  //       title={"6. Isolating the Hook"}
+  //       subtitle=""
+  //     />
+  //   ),
+  //   app: <DashboardExternalHookModal />,
+  // },
   {
     heading: (
       <PageIntro
-        title={"6. Isolating the Hook"}
-        subtitle=""
-      />
-    ),
-    app: <DashboardExternalHookModal />,
-  },
-  {
-    heading: (
-      <PageIntro
-        title={"7. Dark Mode Card"}
+        title={"5. Dark Mode Card"}
         subtitle=""
       />
     ),
@@ -82,7 +82,7 @@ export const chapter_one_examples = [
   {
     heading: (
       <PageIntro
-        title={"8. Introducing Children"}
+        title={"6. Introducing the Children Prop"}
         subtitle=""
       />
     ),

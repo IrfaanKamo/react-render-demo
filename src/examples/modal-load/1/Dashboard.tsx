@@ -1,6 +1,6 @@
 import VerySlowComponent from "@/components/slow/VerySlowComponent"
 import BunchOfStuff from "@/components/stuff/BunchOfStuff"
-import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated"
+import OtherComplicatedStuff from "@/components/stuff/OtherComplicatedStuff"
 import { Typography } from "@mui/material"
 
 // The Slow App
@@ -13,7 +13,7 @@ const Dashboard = () => {
     <div>
       <VerySlowComponent />
       <BunchOfStuff />
-      <OtherStuffAlsoComplicated />
+      <OtherComplicatedStuff />
     </div>
   )
 }

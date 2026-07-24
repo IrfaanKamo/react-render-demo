@@ -1,7 +1,7 @@
 import VerySlowComponent from "@/components/slow/VerySlowComponent";
 import BrowserModal from "@/components/stuff/BrowserModal";
 import BunchOfStuff from "@/components/stuff/BunchOfStuff";
-import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated";
+import OtherComplicatedStuff from "@/components/stuff/OtherComplicatedStuff";
 import Button from "@/components/design/Button";
 
 // The Big Re-renders Myth
@@ -19,7 +19,7 @@ const DashboardWithModalNoState = () => {
       
       <VerySlowComponent />
       <BunchOfStuff />
-      <OtherStuffAlsoComplicated />
+      <OtherComplicatedStuff />
     </div>
   );
 };

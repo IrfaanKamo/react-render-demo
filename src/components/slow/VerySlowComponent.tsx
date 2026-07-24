@@ -6,7 +6,7 @@ const VerySlowComponent = () => {
   console.log("rendered: <VerySlowComponent />")
   return (
     <RenderVisualizer>
-      <pre className=" text-red-500 my-2">
+      <pre className="text-xl text-red-500 my-2">
         <code>{"<VerySlowComponent />"}</code>
       </pre>
     </RenderVisualizer>

@@ -1,7 +1,7 @@
 import DarkModeCard from "./DarkModeCard"
 import VerySlowComponent from "@/components/slow/VerySlowComponent"
 import BunchOfStuff from "@/components/stuff/BunchOfStuff"
-import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated"
+import OtherComplicatedStuff from "@/components/stuff/OtherComplicatedStuff"
 
 // The Dark Mode
 // ------------
@@ -15,7 +15,7 @@ const DashboardDarkMode = () => {
         <>
           <VerySlowComponent />
           <BunchOfStuff />
-          <OtherStuffAlsoComplicated />
+          <OtherComplicatedStuff />
         </>
       }
     />

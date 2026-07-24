@@ -2,7 +2,7 @@ import Button from "@/components/design/Button";
 import useModal from "./useModal"
 import VerySlowComponent from "@/components/slow/VerySlowComponent"
 import BunchOfStuff from "@/components/stuff/BunchOfStuff"
-import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated"
+import OtherComplicatedStuff from "@/components/stuff/OtherComplicatedStuff"
 import BrowserModal from "@/components/stuff/BrowserModal"
 
 // State In A Custom Hook
@@ -20,7 +20,7 @@ const DashboardHookModal = () => {
       <BrowserModal open={isOpen} onClose={close} />
       <VerySlowComponent />
       <BunchOfStuff />
-      <OtherStuffAlsoComplicated />
+      <OtherComplicatedStuff />
     </div>
   )
 }

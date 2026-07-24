@@ -4,7 +4,7 @@ const BunchOfStuff = () => {
   console.log("rendered: <BunchOfStuff />")
   return (
     <RenderVisualizer>
-      <pre className=" text-green-700 my-2">
+      <pre className="text-xl text-green-700 my-2">
         <code>{"<BunchOfStuff />"}</code>
       </pre>
     </RenderVisualizer>

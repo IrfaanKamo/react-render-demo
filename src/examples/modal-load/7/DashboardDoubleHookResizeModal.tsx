@@ -2,7 +2,7 @@ import Button from "@/components/design/Button";
 import useModalWithUseResize from "./useModalWithUseResize"
 import VerySlowComponent from "@/components/slow/VerySlowComponent"
 import BunchOfStuff from "@/components/stuff/BunchOfStuff"
-import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated"
+import OtherComplicatedStuff from "@/components/stuff/OtherComplicatedStuff"
 import BrowserModal from "@/components/stuff/BrowserModal"
 
 // Hooks Calling Hooks
@@ -20,7 +20,7 @@ const DashboardDoubleHookResizeModal = () => {
       <BrowserModal open={isOpen} onClose={close} />
       <VerySlowComponent />
       <BunchOfStuff />
-      <OtherStuffAlsoComplicated />
+      <OtherComplicatedStuff />
     </div>
   )
 }

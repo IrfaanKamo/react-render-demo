@@ -56,7 +56,7 @@ const BrowserModal = ({
             />
           </svg>
         </button>
-        <pre className=" text-red-500 my-2">
+        <pre className="text-xl text-blue-500 my-2">
           <code>{"<Modal />"}</code>
         </pre>
       </div>

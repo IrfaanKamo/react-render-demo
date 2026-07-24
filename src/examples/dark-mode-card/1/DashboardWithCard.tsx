@@ -1,6 +1,6 @@
 import VerySlowComponent from "@/components/slow/VerySlowComponent"
 import BunchOfStuff from "@/components/stuff/BunchOfStuff"
-import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated"
+import OtherComplicatedStuff from "@/components/stuff/OtherComplicatedStuff"
 import { showContainer } from "@/shared/styles"
 import { Switch } from "@mui/material"
 import { useState } from "react"
@@ -18,7 +18,7 @@ const DashboardWithCard = () => {
       <Switch checked={isDark} onChange={() => setIsDark(!isDark)} /> Dark Mode
       <VerySlowComponent />
       <BunchOfStuff />
-      <OtherStuffAlsoComplicated />
+      <OtherComplicatedStuff />
     </div>
   )
 }

@@ -2,7 +2,7 @@ import Button from "@/components/design/Button";
 import VerySlowComponent from "@/components/slow/VerySlowComponent";
 import BrowserModal from "@/components/stuff/BrowserModal";
 import BunchOfStuff from "@/components/stuff/BunchOfStuff";
-import OtherStuffAlsoComplicated from "@/components/stuff/OtherStuffAlsoComplicated";
+import OtherComplicatedStuff from "@/components/stuff/OtherComplicatedStuff";
 import { useState } from "react";
 
 // The re-render problem
@@ -21,7 +21,7 @@ const DashboardWithModal = () => {
       
       <VerySlowComponent />
       <BunchOfStuff />
-      <OtherStuffAlsoComplicated />
+      <OtherComplicatedStuff />
     </div>
   );
 };
